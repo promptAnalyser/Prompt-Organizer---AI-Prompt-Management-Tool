@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Organizer - Manage Your AI Prompts</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Prompt Organizer</h1>
+        <p>Save, organize and manage your AI prompts efficiently</p>
+        <div class="ad-container">
+            <!-- AdSense Header Ad -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </header>
+
+    <main>
+        <section class="controls">
+            <button id="new-prompt-btn" class="btn primary">+ New Prompt</button>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search prompts...">
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="Creative">Creative</option>
+                    <option value="Technical">Technical</option>
+                    <option value="Business">Business</option>
+                    <option value="Education">Education</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="prompts-container">
+            <div id="prompts-list" class="prompts-list">
+                <!-- Prompts will be loaded here -->
+            </div>
+
+            <div class="ad-container">
+                <!-- AdSense In-Content Ad -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                    data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </section>
+
+        <!-- Modal for adding/editing prompts -->
+        <div id="prompt-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2 id="modal-title">New Prompt</h2>
+                <form id="prompt-form">
+                    <input type="hidden" id="prompt-id">
+                    <div class="form-group">
+                        <label for="prompt-title">Title</label>
+                        <input type="text" id="prompt-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prompt-text">Prompt Text</label>
+                        <textarea id="prompt-text" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="prompt-category">Category</label>
+                        <select id="prompt-category" required>
+                            <option value="Creative">Creative</option>
+                            <option value="Technical">Technical</option>
+                            <option value="Business">Business</option>
+                            <option value="Education">Education</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="prompt-tags">Tags (comma separated)</label>
+                        <input type="text" id="prompt-tags">
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" id="cancel-btn" class="btn secondary">Cancel</button>
+                        <button type="submit" id="save-btn" class="btn primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="affiliate-links">
+            <p>Recommended AI Tools:</p>
+            <a href="https://chat.openai.com" target="_blank" rel="noopener noreferrer">ChatGPT</a> |
+            <a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Claude AI</a> |
+            <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">Gemini</a>
+        </div>
+        <p>© 2025 Prompt Organizer | <a href="#" id="export-btn">Export Prompts</a> | <a href="#" id="import-btn">Import
+                Prompts</a></p>
+        <div class="ad-container">
+            <!-- AdSense Footer Ad -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
